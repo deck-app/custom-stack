@@ -12,9 +12,12 @@
   "@AppName": "Custom stack",
   "@Logo": "https://get-deck.com/wp-content/uploads/2022/03/custom-stack.png",
   "@Description": "this is a custom stack",
-  "@LocalPath": "/path/to/cloned/repo"
+  "@LocalPath": "/fullpath/to/cloned/repo"
 }
 ```
+4. ❗️ Update `@LocalPath` to the full path of the cloned repo on step #1
+
+5. Restart the app
 
 You should see a "Custom stack" at the top of the list in the Marketplace. Now, modify the example `docker-compose.yml` cloned from this repo to suit your needs. You could add multiple custom stacks by adding entries to `~/.deck/storage/custom-stacks.json`
 
