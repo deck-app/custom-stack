@@ -1,0 +1,29 @@
+version: '3.1'
+#These are example services, remove the contents and add your own
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - "${HTTP_PORT}:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - "${APP_CODE_PATH_HOST}:/var/www/html${APP_CODE_CONTAINER_FLAG}"
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    ports:
+    - "${OTHER_PORT}:3306"
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:

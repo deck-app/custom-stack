@@ -1,2 +1,1 @@
-# custom-stack
-Custom stack template
+A template for creating custom stacks in DECK

@@ -1,0 +1,33 @@
+#User defined
+user:
+  # mysql_version:
+  #   label:
+  #     MySQL version
+  #   hint:
+  #     Select MySQL version
+  #   type:
+  #     select
+  #   values:
+  #     - "5.0"
+  #     - "7.0"
+  #   target:
+  #     MYSQL_VERSION
+
+#System defaults
+system:
+  #Do you need to edit APP_CODE_PATH_HOST locally using VS code?
+  show_localpath_selector:
+    true
+  #For collecting and storing DB in .env
+  #db/user/password
+  # db_credentials:
+  #   true
+  #Auto generate public ports for the docker images, see .env
+  ports:
+    ##http will map directly with app-name.stacks.run
+    http:
+      HTTP_PORT
+    other:
+      OTHER_PORT
+      
+      
