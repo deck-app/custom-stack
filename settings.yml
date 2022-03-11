@@ -27,7 +27,7 @@ system:
     ##http will map directly with app-name.stacks.run
     http:
       HTTP_PORT
-    other:
+    others:
       OTHER_PORT
       
       
