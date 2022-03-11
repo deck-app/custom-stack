@@ -18,4 +18,4 @@
 
 You should see a "Custom stack" at the top of the list in the Marketplace. Now, modify the example `docker-compose.yml` cloned from this repo to suit your needs. You could add multiple custom stacks by adding entries to `~/.deck/storage/custom-stacks.json`
 
-![Custom stack example](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-11-at-8.47.57-PM.png)
+![Custom stack example](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-11-at-9.06.41-PM.png)
