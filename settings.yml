@@ -29,6 +29,6 @@ system:
       HTTP_PORT
     others:
       #for accessing MySQL databases using Workbench or other softwares
-      MYSQL_POST
+      MYSQL_PORT
       
       
