@@ -22,7 +22,7 @@ services:
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     ports:
-    - "${MYSQL_POST}:3306"
+    - "${MYSQL_PORT}:3306"
     volumes:
       - db:/var/lib/mysql
 volumes:
